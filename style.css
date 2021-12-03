@@ -8,7 +8,7 @@
   --black: #171717;
   --accent-200: #fbf37c;
   /* --accent-200: #ff3732; */
-  --nav-color: #ff3732;
+  --nav-color: hsl(1, 100%, 40%);
   /* --nav-color: #fcfc95; */
   --white: #fff;
   --sans: "Roboto", sans-serif;
@@ -206,6 +206,7 @@ nav {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-family: var(--sans);
+  color: var(--nav-color);
 }
 
 .hero h1 {
