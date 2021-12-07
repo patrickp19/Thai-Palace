@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Thai Palace</title>
   </head>
   <body>
@@ -44,12 +50,39 @@
         </ul>
       </nav>
     </div>
-    <div class="hero">
-      <p>Authentic Thai</p>
-      <h1>Thai Palace Restaurant</h1>
-      <!-- <button class="hero-btn" id="button">See Our Menu</button> -->
-      <a href="./pages/menu.html" class="hero-btn">Explore Menu</a>
-      <!-- <div id="anchor-name"></div> -->
+
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left">
+        <i class="fas fa-chevron-left is-hidden"></i>
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <div class="hero">
+              <p>Authentic Thai</p>
+              <h1>Thai Palace Restaurant</h1>
+              <a href="./pages/menu.html" class="hero-btn">Explore Menu</a>
+            </div>
+          </li>
+          <li class="carousel__slide darken">
+            <img class="carousel__image" src="img/31.jpg" alt="" />
+          </li>
+          <li class="carousel__slide darken">
+            <img class="carousel__image" src="img/42.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="carousel__nav">
+        <div class="carousel__indicator-container">
+          <button class="carousel__indicator current-slide"></button
+          ><button class="carousel__indicator"></button
+          ><button class="carousel__indicator"></button>
+        </div>
+      </div>
     </div>
 
     <main>
@@ -111,5 +144,6 @@
       </div>
     </main>
     <script src="script.js"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>
