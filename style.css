@@ -439,7 +439,7 @@ p {
   object-fit: cover;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .nav-toggle-label {
     display: none;
   }
