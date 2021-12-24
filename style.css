@@ -150,8 +150,10 @@ nav ul {
 }
 
 .hero {
-  background: #fff;
-  padding: 16em 0;
+  background: var(--black);
+  background: black;
+  /* background: black; */
+  /* padding: 16em 0; */
   /* padding-top: 20rem; */
   font-family: var(--serif);
   width: 100%;
@@ -159,6 +161,7 @@ nav ul {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 0;
   /* margin-bottom: 6em; */
   flex-direction: column;
@@ -168,7 +171,6 @@ nav ul {
 }
 
 .navbar {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -179,6 +181,7 @@ nav ul {
   position: relative;
   z-index: 1000;
   background-color: var(--black);
+  /* background-color: black; */
 }
 
 nav {
@@ -208,17 +211,19 @@ nav {
   padding-top: 0;
   margin-top: 0;
   /* margin: 0 100em; */
+  color: #fff;
 }
 
 .hero p {
   font-size: 13px;
   /* font-size: 18px; */
-  color: #000;
+  /* color: #000; */
   font-weight: lighter;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-family: var(--sans);
-  color: var(--nav-color);
+  /* color: var(--nav-color); */
+  color: white;
 }
 
 .hero h1 {
@@ -226,6 +231,7 @@ nav {
 }
 
 .hero-btn {
+  margin-top: 1em;
   text-align: center;
   /* width: 10%; */
   /* min-width: 220px; */
@@ -235,11 +241,11 @@ nav {
   cursor: pointer;
   font-weight: 700;
   text-decoration: none;
-  background: var(--white);
-  color: var(--black);
+  background: black;
+  color: var(--white);
   letter-spacing: 2px;
-  outline: 4px solid var(--black);
-  border: 4px solid var(--black);
+  outline: 1px solid var(--white);
+  border: 2px solid var(--white);
   outline-offset: -5px;
   transition: outline-offset 250ms ease, outline-width 250ms ease;
   position: relative;
@@ -249,18 +255,51 @@ nav {
 }
 
 .hero-btn:focus {
+  cursor: pointer;
   outline-width: 8px;
   outline-offset: -8px;
+}
+
+.hero-btn:hover {
+  cursor: pointer;
+  outline-width: 8px;
+  outline-offset: -8px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-title-container {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.logo-title-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-100 {
+  width: 100%;
+  background-color: var(--black);
+  margin: 0 auto;
 }
 
 .carousel {
   position: relative;
   height: 89vh;
-  width: 80%;
+  /* height: 100%; */
+  width: 100%;
   margin: 0 auto;
+  box-shadow: #fff;
+  /* border-top: 1px solid white; */
   /* background: #fff; */
   /* z-index: -1; */
   /* margin-bottom: 8em; */
+  /* padding-bottom: 30em; */
 }
 
 .carousel__image {
@@ -274,7 +313,7 @@ nav {
 .darken::after {
   content: "";
   background: rgba(0, 0, 0, 0.4);
-  z-index: 50;
+  /* z-index: 50; */
   position: absolute;
   top: 0;
   left: 0;
@@ -287,7 +326,7 @@ nav {
 .carousel__image::after {
   content: "";
   background: rgba(0, 0, 0, 1);
-  z-index: 50;
+  /* z-index: 50; */
   position: absolute;
   top: 0;
   left: 0;
@@ -311,7 +350,7 @@ nav {
   position: relative;
   height: 100%;
   transition: transform 250ms ease-in;
-  z-index: -5;
+  /* z-index: -5; */
 }
 
 .carousel__slide {
@@ -319,7 +358,7 @@ nav {
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: -5;
+  /* z-index: -5; */
 }
 
 .carousel__button {
@@ -336,6 +375,7 @@ nav {
 
 .carousel__button--left {
   left: 20px;
+  /* display: none; */
 }
 
 .carousel__button--right {
@@ -435,12 +475,6 @@ p {
   transition: opacity 250ms ease-in-out 260ms;
 }
 
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -449,12 +483,15 @@ p {
   .logo__container {
     align-self: center;
     /* margin-left: 3rem; */
+    display: flex;
+    justify-content: center;
   }
 
   .navbar {
     display: flex;
     flex-direction: row;
     width: 80%;
+    margin: 0 auto;
   }
 
   nav {
@@ -499,6 +536,9 @@ p {
 
   nav a:hover:before {
     transform: scale(1, 1);
+  }
+  .carousel {
+    width: 80%;
   }
 
   .content {
