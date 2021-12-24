@@ -283,6 +283,7 @@ nav {
   width: 100%;
   background-color: var(--black);
   margin: 0 auto;
+  border-bottom: 1px solid white;
 }
 
 .carousel {
