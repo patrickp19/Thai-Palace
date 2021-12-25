@@ -236,8 +236,9 @@ nav {
   /* width: 10%; */
   /* min-width: 220px; */
   /* border-radius: 15px; */
+  /* width: 40%; */
   padding: 0.85em 2em;
-  font-size: 18px;
+  font-size: 10px;
   cursor: pointer;
   font-weight: 700;
   text-decoration: none;
@@ -512,6 +513,14 @@ p {
   nav ul {
     display: flex;
     flex-direction: row;
+  }
+
+  .hero-btn {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 8px;
   }
 
   nav a.nav__link {
