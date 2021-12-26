@@ -215,7 +215,7 @@ nav {
 }
 
 .hero p {
-  font-size: 13px;
+  font-size: 10px;
   /* font-size: 18px; */
   /* color: #000; */
   font-weight: lighter;
@@ -315,7 +315,7 @@ img {
 
 .darken::after {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
   /* z-index: 50; */
   position: absolute;
   top: 0;
@@ -520,7 +520,7 @@ p {
   }
 
   .hero p {
-    font-size: 8px;
+    font-size: 16px;
   }
 
   nav a.nav__link {
@@ -568,7 +568,7 @@ p {
   .container {
     flex-direction: row;
     /* justify-content: space-between; */
-    gap: 2rem;
+    gap: 4rem;
     padding-bottom: 5rem;
     align-items: flex-start;
   }
