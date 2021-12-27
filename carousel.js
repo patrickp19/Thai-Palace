@@ -80,3 +80,7 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   hideShowArrows(targetIndex);
 });
+
+setTimeout(() => {
+  document.querySelector(":root").style.scrollBehavior = "smooth";
+}, 0);
